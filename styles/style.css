@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer{
+    background: linear-gradient(45deg, lightgreen,darkgreen);
+}
+body {
+    font-family: 'Bokor', cursive;
+    background: linear-gradient(45deg, black, lightgrey);
+    background-repeat: no-repeat;
+}
+ul li:hover{
+    font-size: 28px;
+}
+/* flip-cards */
+.front{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.container .box .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+.container .box .front .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.container .box .front .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .front .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .box:hover .front{
+    transform: rotateY(180deg);
+}
+
+.container .box .front .back div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, green, cyan);
+    transform: translateZ(100px);
+}
+
+.container .box .front .back div h3{
+    letter-spacing: 1px;
+}
+/* skillbar */
+.skillbar {
+    background-color: black;
+    height: 25px;
+    border-radius: 10px;
+}
+.HTML5 {
+    color: rgb(255, 255, 255);
+    background-color: darkcyan;
+    border-radius: 10px;
+    animation: fill-animation1 5s forwards infinite;
+    width: 10%;
+}
+.CSS {
+    color: rgb(255, 255, 255);
+    background-color: lightcoral;
+    border-radius: 10px;
+    animation: fill-animation2 5s forwards infinite;
+    width: 10%;
+}
+.Bootstrap {
+    color: rgb(255, 255, 255);
+    background-color: darkorchid;
+    border-radius: 10px;
+    animation: fill-animation3 5s forwards infinite;
+    width: 10%;
+}
+/* skillbar animation */
+@keyframes fill-animation1 {
+    from{left:1%;}
+    to{width: 90%;}
+}
+@keyframes fill-animation2 {
+    from{left:1%;}
+    to{width: 65%;}
+}
+@keyframes fill-animation3 {
+    from{left:1%;}
+    to{width: 80%;}
+}
