@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Portfolio-Daniel Hector</title>
 </head>
 <body>
@@ -24,12 +26,12 @@
               </a>
               <div class="lead d-flex justify-content-end ">
                 <ul class="list-unstyled d-flex gap-2">
-                    <li><a class="text-decoration-none text-white" href="#Home">Home</a></li>
-                    <li><a class="text-decoration-none text-white" href="#Resume">Resume</a></li>
-                    <li><a class="text-decoration-none text-white" href="#Project">Project</a></li>
-                    <li><a class="text-decoration-none text-white" href="#Skills">Skills</a></li>
-                    <li><a class="text-decoration-none text-white" href="#Testimonials">Testimonials</a></li>
-                    <li><a class="text-decoration-none text-white" href="#Contact">Contact</a></li>
+                    <li><i class="bi bi-house-door-fill"></i><a class="text-decoration-none text-white" href="#Home">Home</a></li>
+                    <li><i class="bi bi-file-earmark-person-fill"></i><a class="text-decoration-none text-white" href="#Resume">Resume</a></li>
+                    <li><i class="bi bi-folder-fill"></i><a class="text-decoration-none text-white" href="#Projects">Projects</a></li>
+                    <li><i class="bi bi-graph-up"></i><a class="text-decoration-none text-white" href="#Skills">Skills</a></li>
+                    <li><i class="bi bi-chat-dots-fill"></i><a class="text-decoration-none text-white" href="#Testimonials">Testimonials</a></li>
+                    <li><i class="bi bi-telephone-fill"></i><a class="text-decoration-none text-white" href="#Contact">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -37,7 +39,7 @@
     </header>
     <section>
         <!-- flip-card -->
-        <div class="container d-flex flex-wrap justify-content-end">
+        <div class="container d-flex flex-wrap justify-content-end" id="Home">
             <div class="box">
                 <div class="front">
                     <div class="imgContainer">
@@ -55,7 +57,7 @@
     </section>
         <!-- resume -->
         <div class="container-fluid d-flex text-light flex-column">
-            <h1><u>Resume</u></h1>
+            <h1 id="Resume"><u>Resume</u></h1>
             <p class="lead fs-4">
                 <strong>Education:</strong><br>
                 <em><u>Lotus High school</u></em> - January 2008-December 2013 (admission to bachelors)<br>
@@ -70,7 +72,7 @@
         </div>
         <!-- Projects -->
         <div class="container-fluid d-flex text-light text-center row">
-            <h1><u>Projects</u></h1>
+            <h1 id="Projects"><u>Projects</u></h1>
                 <p class="lead fs-4">
                     Here are some Projects I am working on!
                 </p>
@@ -87,7 +89,7 @@
         </div>
         <!-- skills -->
         <div class="p-5">
-            <h1 class="Skills text-center text-white text-decoration-underline ">Skills</h1>
+            <h1 class="Skills text-center text-white text-decoration-underline" id="Skills">Skills</h1>
             <div class="skillbar text-light text-center text-nowrap">
                 <div class="HTML5 my-2 ms-2 fs-5" data-skill="HTML5">HTML5 90%</div>
             </div>
@@ -100,7 +102,7 @@
         </div>
         <!-- testimonials -->
         <div class="row text-center text-white">
-            <H1 class=" text-decoration-underline">Testimonials</H1>
+            <H1 class=" text-decoration-underline" id="Testimonials">Testimonials</H1>
             <div class="d-flex flex-column col-4">
                 <h3>Joel Mukanya</h3>
                 <img class="img-fluid" src="https://i.postimg.cc/C12R1f8G/Joel-Profile.jpg" alt="">
