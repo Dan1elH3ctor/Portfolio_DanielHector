@@ -130,3 +130,37 @@ ul li:hover{
     from{left:1%;}
     to{width: 80%;}
 }
+/* image border animation */
+.Daniel {
+    border: 5px solid red;
+    animation: Color 1s infinite;
+  }
+  @keyframes Color {
+    10% {border: 5px solid red;}
+    30%{border: 5px solid orange;}
+    50%{border: 5px solid yellow;}
+    70%{border: 5px solid lime;}
+    100%{border: 5px solid green;}
+  }
+  .swords_art p{
+    border: 5px solid red;
+    animation: Color 1s infinite;
+  }
+  @keyframes Color {
+    10% {border: 5px solid red;}
+    30%{border: 5px solid orange;}
+    50%{border: 5px solid yellow;}
+    70%{border: 5px solid lime;}
+    100%{border: 5px solid green;}
+  }
+  .anime_emporium p{
+    border: 5px solid red;
+    animation: Color 1s infinite;
+  }
+  @keyframes Color {
+    10% {border: 5px solid red;}
+    30%{border: 5px solid orange;}
+    50%{border: 5px solid yellow;}
+    70%{border: 5px solid lime;}
+    100%{border: 5px solid green;}
+  }
